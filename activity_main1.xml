@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rzut kośćmi"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ilość kości"
+            android:textSize="17sp"/>
+
+        <EditText
+            android:id="@+id/ileKosci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Wpisz ilość kości"
+            android:inputType="number"
+            android:text="5"/>
+
+        <Button
+            android:id="@+id/btnRoll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="RZUĆ"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Twój rzut"
+            android:layout_marginTop="18dp"
+            android:textSize="22sp"
+            android:textStyle="bold"/>
+
+        <GridLayout
+            android:id="@+id/kostkiTu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:gravity="center"
+            android:useDefaultMargins="true"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rezultat: "
+            android:textStyle="bold"
+            android:layout_marginTop="18dp"
+            android:textSize="22sp"/>
+
+        <TextView
+            android:id="@+id/txtScores"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-, -, -, -, -"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:padding="8dp"/>
+
+        <Button
+            android:id="@+id/btnAscending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OD NAJMNIEJSZEJ"/>
+
+        <Button
+            android:id="@+id/btnDescending"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="OD NAJWIĘKSZEJ"/>
+
+    </LinearLayout>
+</ScrollView>
